@@ -5,6 +5,8 @@ import (
 	"net"
 	"os"
 	"time"
+	"math/rand"
+	"math"
 )
 
 func main() {
@@ -17,4 +19,9 @@ func main() {
 
 	fmt.Println("Or access the network:")
 	fmt.Println(net.Dial("tcp", "google.com"))
+
+	fmt.Println("My favorite number is", rand.Intn(10))
+
+	fmt.Println("Now you have %g problems.", math.Nextafter(2, 3))
+	fmt.Println(math.Pi)
 }
