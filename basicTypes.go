@@ -5,6 +5,8 @@ import (
     "math/cmplx"
 )
 
+const Pi = 3.14
+
 var (
     ToBe   bool       = false
     MaxInt uint64     = 1<<64 - 1
@@ -16,4 +18,11 @@ func main() {
     fmt.Printf(f, ToBe, ToBe)
     fmt.Printf(f, MaxInt, MaxInt)
     fmt.Printf(f, z, z)
+
+    const World = "世界"
+    fmt.Println("Hello", World)
+    fmt.Println("Happy", Pi, "Day")
+
+    const Truth = true
+    fmt.Println("Go rules?", Truth)
 }
