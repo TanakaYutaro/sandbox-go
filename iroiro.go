@@ -14,4 +14,11 @@ func main() {
 	v.X = 4
 
 	fmt.Println(v.X)
+
+
+	p := Vertex{1, 2}
+	q := &p
+
+	q.X = 1e9
+	fmt.Println(p)
 }
