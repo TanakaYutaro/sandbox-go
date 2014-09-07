@@ -7,18 +7,18 @@ type Vertex struct {
 	Y int
 }
 
+var (
+	p = Vertex{1, 2}
+	q = &Vertex{1, 2}
+	r = Vertex{X :1}
+	s = Vertex{}
+)
+
 func main() {
-	fmt.Println(Vertex{1, 2})
+	fmt.Println(p, q, r, s)
 
-	v := Vertex{1, 2}
-	v.X = 4
-
-	fmt.Println(v.X)
-
-
-	p := Vertex{1, 2}
-	q := &p
-
-	q.X = 1e9
-	fmt.Println(p)
+	v := new(Vertex)
+	fmt.Println(v)
+	v.X, v.Y = 11, 9
+	fmt.Println(v)
 }
